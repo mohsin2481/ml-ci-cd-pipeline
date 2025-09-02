@@ -49,6 +49,6 @@ def predict():
     except Exception as e:
         return jsonify(error=str(e)), 500
 
-if __name__ = "__"main__":
+if __name__ = "__main__":
     # local dev only; render will run with Gunicorn (see startCommand below)
     app.run(host ="0.0.0.0" , port=int(os.environ.get("Port", 8000)))
